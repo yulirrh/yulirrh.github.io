@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-block: 0;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+   }
+
+header img {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    margin-right: auto;
+}
+    
+
+header.navigation-bar .nav-list ul {
+    display: flex;
+    justify-content: right;
+    gap: 2rem 1rem;
+    list-style-type: none;
+}
+
+header.navigation-bar .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navigation-bar .nav-list li:hover a {
+    background-color: #533876;
+    color: white;
+}
+
+main {
+    margin-top: 20px;
+    
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.column {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column h2 {
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.Lapor {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-decoration: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #533876;
+    cursor: pointer;
+    transition: all .15s ease-in;
+    margin-right: 10px;
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px
+}
+
+button a:hover {
+    color: #2D3E50;
+    background-color: transparent;
+    transition: all .0.1s ease-in;
+}
+main .content .content-description button:hover {
+    border: 3px solid #2D3E50;
+    color: #2D3E50;
+    background-color: transparent;
+}
+
+h1 {
+    color: #533876;
+    font-size: 60px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .profile-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    height: 650px;
+    background-color: #F4EDFF;
+    text-align: center;
+    color: #26094C;
+}
+
+aside .profile-image {
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #533876;
+}
+
+
+footer .footer-container {
+    padding: 20px;
+    background-color:#ffffff;
+  }
+
+footer .footer-disclaimer {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+footer .footer-container-socmed ul {
+    text-align: center;
+}
+
+footer .footer-container-socmed ul li {
+  padding: 10px;
+  list-style:none;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+  display: inline
+}
+
+footer .footer-container-socmed li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #533876;
+    transition: all .1s ease-in-out;
+
+}
+
+footer .footer-container-socmed li a:hover {
+    border: 3px solid #533876;
+    border-radius: 50%;
+}
+
+
+h2 {
+    color: #533876;
+    margin-bottom: 20px;
+}
+
+.purplebackground {
+    background-color: #F4EDFF;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main .content {
+        width: 80%;
+        margin: 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        height: auto;
+    }
+
+    aside {
+        margin: auto;
+        text-align: center;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav .nav-list {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav .nav-list ul {
+        text-align: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    nav .nav-list ul li {
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+}
