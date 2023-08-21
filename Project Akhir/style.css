@@ -208,7 +208,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
     main .content {
-        width: 80%;
+        width: 100%;
         margin: 0;
     }
 
