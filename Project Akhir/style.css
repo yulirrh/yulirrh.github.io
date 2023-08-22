@@ -37,7 +37,7 @@ nav {
     width: 100%;
     margin: auto;
     display: flex;
-    line-height: 80px;
+    line-height: 50px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -101,26 +101,56 @@ h3 {
 }
 
 button {
-    color: white;
-    background-color: #533876;
     padding: .5rem 1.5rem;
     border-radius: 999px;
     margin-top: 20px;
     font-weight: 800;
+    background-color: #533876;
+    border-color: 3px solid #533876;
 }
 
 button a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
-button a:hover {
-    color: #2D3E50;
+button:hover {
     transition: all .0.1s ease-in;
-    border-color: 3px solid #2D3E50;
+    border-color: 3px solid #533876;
     border-radius: 999px;
+    background-color: transparent;
+    color: #533876;
 }
 
+button a:hover {
+    color: #533876;
+}
+
+.Lapor {
+    margin: 5px 0px 5px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.lembaga-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-lembaga {
+  width: 20%;  
+  margin: 0 auto;
+
+}
+
+.kartu-lembaga img {
+    width: 80%;
+}
 
 aside {
     display: flex;
@@ -195,12 +225,14 @@ footer .footer-container-socmed li a:hover {
     background-color: #F4EDFF;
     margin: 5px;
     border-radius: 10px;
-    padding: 10px 10px
+    padding: 3px 10px
 }
 
 .information {
     line-height: 35px;
 }
+
+
 
 @media screen and (max-width:991.98px) {
     .wrapper {
@@ -221,7 +253,7 @@ footer .footer-container-socmed li a:hover {
     nav .menu ul {
         text-align: center;
         margin: auto;
-        line-height: 60px;
+        line-height: 40px;
     }
 
     nav .menu ul li {
@@ -239,3 +271,4 @@ footer .footer-container-socmed li a:hover {
         height: auto;
     }
 }
+
